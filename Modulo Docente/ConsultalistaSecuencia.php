@@ -4,11 +4,17 @@ $consulta = "SELECT*FROM tbl_documentos_Secuencia";
 ?>
 <!doctype html>
 <html lang="en">
+  <head>
    <!-- Required meta tags -->
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <head>
+    <!-- Archivos CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Archivos JS de Bootstrap (junto con las dependencias de Popper.js y jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    
         <meta charset="utf-8">
         <title>Consulta de PDF</title>
         <link rel="stylesheet" href="../style.css">
@@ -50,13 +56,11 @@ $consulta = "SELECT*FROM tbl_documentos_Secuencia";
     </style>
 </head>
 <body> 
- <!--========================================================== -->
-                        <!-- ENCABEZADO -->
-  <!--========================================================== -->
-  <?php
-include("nav2.php");
-
+<?php
+include("nav2.html");
 ?>
+
+
     <!-- Consultar Secuencia PDF-->
 
     <div class="table-responsive">

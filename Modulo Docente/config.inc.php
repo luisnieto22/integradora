@@ -3,7 +3,7 @@
 class Conect_MySql {   
      var $obj = array ( "dbname"	=>	"lempis",
                        "dbuser"		=>	"root"		,
-                       "dbpwd"		=>	""		,
+                       "dbpwd"		=>	"-root123"		,
                        "dbhost"		=>	"localhost"	);
 
 

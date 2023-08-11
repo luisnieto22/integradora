@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -8,8 +7,13 @@
     <link rel="icon" href="../assets/img/doguitoadm.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Archivos CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Archivos JS de Bootstrap (junto con las dependencias de Popper.js y jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="../assets/css/base/base.css">
     <!-- <link rel="stylesheet" href="../assets/css/base/base.css" /> -->
     <link rel="stylesheet" href="../assets/css/componentes/header.css" />
@@ -18,12 +22,9 @@
     <link rel="stylesheet" href="../assets/css/componentes/inputs.css" />
     <link rel="stylesheet" href="../assets/css/componentes/button.css" />
   </head>
-  <?php
-include("nav2.php");
-
-?>
   <body>
   <?php
+include("nav2.html");
 include_once 'config.inc.php';
 if (isset($_POST['subir'])) {
     $nombre = $_FILES['archivo']['name'];
